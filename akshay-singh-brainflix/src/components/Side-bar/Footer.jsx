@@ -1,11 +1,12 @@
+
 function Footer(){
     return(
         <footer className="footer">
-        <h3 className="footer__title">next videos</h3>
-        <div className="footer__vid1">
-          <img src="" alt="" />
-          <h4>Become A Travel Pro In One Easy Lesson</h4>
-          <p>Todd Welch</p>
+        <h3 className="footer__tag">next videos</h3>
+        <div className="footer__vid">
+          <img className="footer__img" src="" alt="" />
+          <h4 className="footer__title">Become A Travel Pro In One Easy Lesson</h4>
+          <p className="footer__artist">Todd Welch</p>
         </div>
         <div className="footer__vid2">
           <img src="" alt="" />

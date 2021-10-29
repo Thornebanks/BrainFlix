@@ -1,4 +1,4 @@
-
+import hero from '../../assests/Images/Mohan-muruge.jpg'
 
 function NewComments() {
     return (
@@ -6,7 +6,7 @@ function NewComments() {
           <p className="new-comments__total-comments">3 Comments</p>
           <h3 className="new-comments__title">join the conversation</h3>
           <div className="new-comments__section">
-            <div className="new-comments__img"><img src="" alt="" /></div>
+            <div className="new-comments__img"><img src={hero} alt="hero image" /></div>
             <form>
               <textarea
                 name=""
