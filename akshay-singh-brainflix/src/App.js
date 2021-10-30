@@ -4,7 +4,7 @@ import Video from './components/Video/Video';
 import VideoDetails from './components/Video-details/Video-details';
 import NewComments from './components/New-comments/NewComments';
 import Comments from './components/comments/Comments';
-import Footer from './components/Side-bar/Footer';
+import SideBar from './components/Side-bar/SideBar';
 import data from './assests/Data/video-details.json';
 
 
@@ -21,7 +21,7 @@ class App extends React.Component {
         <VideoDetails video={this.state.video}/>
         <NewComments />
         <Comments video={this.state.video}/>
-      <Footer />
+      <SideBar />
     </div>
   );}
 }
