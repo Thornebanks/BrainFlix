@@ -1,20 +1,23 @@
 import data from "../../assests/Data/video-details.json"
+import './sideBar.scss'
 
 function SideBar(){
  const videos = data.slice(1);
   return (
-      <div>
-        {videos.map((data) => {
-          return (
-            <div>
-              <h3>next video</h3>
-              <img src={data.image} alt="image" />
-              <h3>{data.title}</h3>
-              <h4>{data.channel}</h4>
-              </div>
-          );
-        })}
-      </div>
+    <div className="side-bar">
+      <h3 className="side-bar__videos">next video</h3>
+        <div className="side-bar__section">
+          {videos.map((data) => {
+            return (
+              <div className="side-bar__container">
+                <img className="side-bar__img" src={data.image} alt="image" />
+                <h3 className="side-bar__title">{data.title}</h3>
+                <h4 className="side-bar__artist">{data.channel}</h4>
+                </div>
+            );
+          })}
+        </div>
+    </div>
   )
 }
 

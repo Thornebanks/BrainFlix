@@ -1,0 +1,42 @@
+@use '../../partials/global' as *;
+@use '../../partials/mixins' as *;
+@use '../../partials/typography' as *;
+@use '../../partials/variables' as *;
+
+.side-bar{
+    border-top: 1px solid $silver;
+    margin-left: 16px;
+
+    &__videos{
+        font-family: $font-family;
+        text-transform: uppercase;
+        color: $silver;
+        font-weight: normal;
+    }
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 16px;
+        position: relative;
+    }
+    &__img{
+        height: 25vw;
+        width: 40vw;
+        border-radius: 4px;
+    }
+    &__title{
+        font-family: $font-family;
+        color: $brainFlix-black;
+        padding-left: 16px;
+        font-size: pxToRem(13);
+        width: 57%;
+    }
+    &__artist{
+        font-family: $font-family;
+        font-weight: normal;
+        position: relative;
+        left: 144px;
+        top: -40px;
+    }
+    
+}
