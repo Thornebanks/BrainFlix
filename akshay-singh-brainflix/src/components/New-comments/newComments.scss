@@ -1,0 +1,46 @@
+@use '../../partials/global' as *;
+@use '../../partials/mixins' as *;
+@use '../../partials/variables' as *;
+
+.new-comments{
+    padding-left: 16px;
+
+    &__total{
+        font-family: $font-family;
+        font-weight: bold;
+    }
+    &__title {
+        font-family: $font-family;
+        text-transform: uppercase;
+        color: $silver;
+        font-weight: normal;
+        font-size: pxToRem(12);
+        padding-left: 54px;
+    }
+    &__section{
+        display: flex;
+    }
+    &__img{
+        border-radius: 50%;
+        height: pxToRem(50);
+    }
+    &__textarea{
+        resize: none;
+        color: $brainFlix-black;
+        border-radius: 4px;
+        margin:0 16px;
+        height: pxToRem(100);
+    }
+    &__btn{
+        padding: 16px 0;
+        &--style{
+        padding: 16px;  
+        margin:0 16px;
+        text-transform: uppercase; 
+        border-radius: 4px; 
+        color: $white;
+        background-color: $brainFlix-blue;
+        width: 88%;
+        }
+    }
+}

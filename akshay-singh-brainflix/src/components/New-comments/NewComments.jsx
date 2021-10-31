@@ -1,26 +1,34 @@
-import hero from '../../assests/Images/Mohan-muruge.jpg'
+import hero from "../../assests/Images/Mohan-muruge.jpg";
+import "./newComments.scss";
 
 function NewComments() {
-    return (
-        <section className="new-comments">
-          <p className="new-comments__total-comments">3 Comments</p>
-          <h3 className="new-comments__title">join the conversation</h3>
-          <div className="new-comments__section">
-            <div className="new-comments__img"><img src={hero} alt="hero image" /></div>
-            <form>
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Add new comment"
-                required
-              ></textarea>
-              <button className="new-comments__btn">comment</button>
-            </form>
+  return (
+    <section className="new-comments">
+      <p className="new-comments__total">3 Comments</p>
+      <h3 className="new-comments__title">join the conversation</h3>
+      <div className="new-comments__section">
+        <div>
+          <img className="new-comments__img" src={hero} alt="hero image" />
+        </div>
+        <form>
+          <textarea
+            className="new-comments__textarea"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Add a new comment"
+            required
+          ></textarea>
+          <div className="new-comments__btn">
+            <button className="new-comments__btn new-comments__btn--style">
+              comment
+            </button>
           </div>
-        </section>
-    );
+        </form>
+      </div>
+    </section>
+  );
 }
 
 export default NewComments;

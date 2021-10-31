@@ -1,0 +1,42 @@
+@use '../../partials/global' as *;
+@use '../../partials/mixins' as *;
+@use '../../partials/typography' as *;
+@use '../../partials/variables' as *;
+
+.header {
+
+    &__img {
+        padding: 16px 80px;
+        height: 64px;
+    }
+    &__search {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__form{
+        padding-left: 16px;
+        &--search{
+            padding: 16px;
+            border-radius: 4px;
+        }
+    }
+    &__hero img{
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+    }
+    &__btn{
+        width: 100%;
+        &--style{
+        display: block;
+        padding: 16px;  
+        margin:0 16px;
+        text-transform: uppercase; 
+        border-radius: 4px; 
+        color: $white;
+        background-color: $brainFlix-blue;
+        width: 123%;
+        }
+    }
+}
+
