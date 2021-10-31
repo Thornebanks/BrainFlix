@@ -8,6 +8,7 @@
     &__total{
         font-family: $font-family;
         font-weight: bold;
+        padding-left: 16px;
     }
     &__title {
         font-family: $font-family;
@@ -15,32 +16,36 @@
         color: $silver;
         font-weight: normal;
         font-size: pxToRem(12);
-        padding-left: 54px;
+        padding-left: 96px;
     }
     &__section{
         display: flex;
+        justify-content: space-evenly;
     }
     &__img{
         border-radius: 50%;
-        height: pxToRem(50);
+        height: pxToRem(36);
+        width: pxToRem(36);
     }
     &__textarea{
         resize: none;
         color: $brainFlix-black;
         border-radius: 4px;
-        margin:0 16px;
         height: pxToRem(100);
+        width: 11rem;
+        padding: 16px;
     }
     &__btn{
         padding: 16px 0;
         &--style{
-        padding: 16px;  
-        margin:0 16px;
         text-transform: uppercase; 
         border-radius: 4px; 
         color: $white;
         background-color: $brainFlix-blue;
-        width: 88%;
+        width: 100%;
+        &:hover{
+            background-color: $brainFlix-darkBlue;
+        }
         }
     }
 }

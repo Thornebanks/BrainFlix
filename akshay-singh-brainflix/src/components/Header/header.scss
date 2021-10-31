@@ -36,6 +36,9 @@
         color: $white;
         background-color: $brainFlix-blue;
         width: 123%;
+        &:hover{
+            background-color: $brainFlix-darkBlue;
+        }
         }
     }
 }

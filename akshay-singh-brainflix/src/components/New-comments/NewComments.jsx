@@ -10,7 +10,7 @@ function NewComments() {
         <div>
           <img className="new-comments__img" src={hero} alt="hero image" />
         </div>
-        <form>
+        <form className="new-comments__form">
           <textarea
             className="new-comments__textarea"
             name=""
