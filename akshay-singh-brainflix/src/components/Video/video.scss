@@ -2,7 +2,16 @@
 @use '../../partials/mixins' as *;
 @use '../../partials/variables' as *;
 
-// .current-video{
-
+.current-video{
+    @include tablet{
+        background-color: $brainFlix-darkBlack;
+    }
     
-// }
+    &__main{
+        @include tablet{
+        width: 90vw;
+        margin: 0 auto;
+        padding-left: 72px;
+    }
+    }
+}

@@ -4,10 +4,16 @@
 @use '../../partials/variables' as *;
 
 .header {
-
+    @include tablet {
+        display: flex;
+        padding-top: 32px;
+    }
     &__img {
         padding: 16px 80px;
         height: 64px;
+        @include tablet{
+            padding: 16px 32px;
+        }
     }
     &__search {
         display: flex;
@@ -15,15 +21,24 @@
     }
     &__form{
         padding-left: 16px;
+        @include tablet {
+            display: flex;
+        }
         &--search{
             padding: 16px;
             border-radius: 4px;
+            @include tablet {
+                height: 52px;
+            }
         }
     }
     &__hero img{
         border-radius: 50%;
         height: 50px;
         width: 50px;
+        @include tablet {
+            margin-left: 60px;
+        }
     }
     &__btn{
         width: 100%;
@@ -39,6 +54,11 @@
         &:hover{
             background-color: $brainFlix-darkBlue;
         }
+        }
+        @include tablet{
+            display: flex;
+            padding: 0;
+            margin: 0%;
         }
     }
 }

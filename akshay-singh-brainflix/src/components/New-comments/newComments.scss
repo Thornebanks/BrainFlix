@@ -4,11 +4,25 @@
 
 .new-comments{
     padding-left: 16px;
+    @include tablet {
+        padding-top: 32px;
+        padding-bottom: 16px;
+    }
+    &__form{
+        @include tablet{
+            display: flex;
+            padding-left: 16px;
+            width: 100%;
+        }
+    }
 
     &__total{
         font-family: $font-family;
         font-weight: bold;
         padding-left: 16px;
+        @include tablet{
+            font-size: pxToRem(14);
+        }
     }
     &__title {
         font-family: $font-family;
@@ -17,15 +31,27 @@
         font-weight: normal;
         font-size: pxToRem(12);
         padding-left: 96px;
+        @include tablet{
+            font-size: pxToRem(14);
+            padding-left: 64px;
+        }
     }
     &__section{
         display: flex;
         justify-content: space-evenly;
+        @include tablet{
+            display: flex;
+            justify-content: flex-start;
+        }
     }
     &__img{
         border-radius: 50%;
         height: pxToRem(36);
         width: pxToRem(36);
+        @include tablet{
+            height: pxToRem(50);
+        width: pxToRem(50);
+        }
     }
     &__textarea{
         resize: none;
@@ -34,6 +60,11 @@
         height: pxToRem(100);
         width: 11rem;
         padding: 16px;
+        @include tablet{
+            height: 52px;
+            padding: 15px;
+            width: pxToRem(470);
+        }
     }
     &__btn{
         padding: 16px 0;
@@ -46,6 +77,12 @@
         &:hover{
             background-color: $brainFlix-darkBlue;
         }
+        }
+        @include tablet{
+            width: pxToRem(170);
+            padding: 0;
+            height: pxToRem(52);
+            margin-left: 16px;
         }
     }
 }
