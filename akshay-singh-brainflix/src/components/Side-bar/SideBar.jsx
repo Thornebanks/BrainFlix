@@ -7,6 +7,7 @@ function SideBar(){
         {videos.map((data) => {
           return (
             <div>
+              <h3>next video</h3>
               <img src={data.image} alt="image" />
               <h3>{data.title}</h3>
               <h4>{data.channel}</h4>

@@ -9,6 +9,7 @@ function Comments(props){
               <OldComments
                       key={Comment.id}
                       name={Comment.name}
+                      timestamp={Comment.timestamp}
                       comment={Comment.comment}
                      
                       />
