@@ -5,6 +5,9 @@
 
 .comments{
     padding:0 32px;
+    @include tablet {
+        padding: 32px 32px;
+    }
     
 }
 .oldComments{
@@ -23,10 +26,17 @@
         padding-left: 10px;
         font-family: $font-family;
         font-size: pxToRem(13);
+        @include tablet{
+            font-size: pxToRem(14);
+            padding-left: 32px;
+        }
     }
     &__date{
         color: $silver;
         padding-left: 10px;
+        @include tablet{
+            padding-left: 380px;
+        }
     }
     &__comments{
         font-family: $font-family;
@@ -35,5 +45,10 @@
         font-size: pxToRem(13);
         line-height: pxToRem(18);
         padding-left: 60px;
+        @include tablet{
+            padding-left: 80px;
+            font-size: pxToRem(14);
+            line-height: pxToRem(22);
+        }
     }
 }

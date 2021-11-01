@@ -6,6 +6,9 @@
 .side-bar{
     border-top: 1px solid $silver;
     margin-left: 32px;
+    @include tablet{
+        padding-left: 8px;
+    }  
 
     &__videos{
         font-family: $font-family;
@@ -17,11 +20,18 @@
         display: flex;
         flex-wrap: wrap;
         position: relative;
+        @include tablet{
+            padding-top: 24px;
+        }
     }
     &__img{
         height: 25vw;
         width: 40vw;
         border-radius: 4px;
+        @include tablet{
+            height: 14vw;
+            width: 25vw;
+        }
     }
     &__title{
         font-family: $font-family;
@@ -29,6 +39,10 @@
         padding:0 16px;
         font-size: pxToRem(13);
         width: 50%;
+        @include tablet{
+            font-size: pxToRem(14);
+            width: 30%;
+        }
     }
     &__artist{
         font-family: $font-family;
@@ -36,6 +50,11 @@
         position: relative;
         left: 144px;
         top: -34px;
+        @include tablet{
+            left: -200px;
+            top: 60px;
+    }
+    
     }
     
 }

@@ -13,5 +13,8 @@
         margin: 0 auto;
         padding-left: 72px;
     }
+    @include desktop{
+        padding-left: pxToRem(150);
+    }
     }
 }

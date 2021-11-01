@@ -5,6 +5,10 @@
 
 .video {
     padding-left: 32px;
+    @include desktop{
+        padding-left: 88px;
+        width: 75%;
+    }
 
     &__title{
         font-family: $font-family;
@@ -19,6 +23,10 @@
             padding-top: 16px;
             border-bottom: hidden ;
         }
+    }
+    &__art{
+        display: flex;
+        align-items: baseline;
     }
 
     &__artist{
@@ -41,6 +49,12 @@
             font-size: pxToRem(14);
             line-height: pxToRem(22);
             padding-top: 32px;
+        }
+    }
+    &__date{
+        color: $silver;
+        @include desktop{
+            padding-left: 40px;
         }
     }
 }

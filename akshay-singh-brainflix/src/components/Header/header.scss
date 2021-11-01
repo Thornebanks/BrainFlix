@@ -7,6 +7,11 @@
     @include tablet {
         display: flex;
         padding-top: 32px;
+        position: relative;
+    }
+    @include desktop{
+        padding-left: 80px;
+        padding-bottom: 16px;
     }
     &__img {
         padding: 16px 80px;
@@ -24,6 +29,10 @@
         @include tablet {
             display: flex;
         }
+        @include desktop{
+            padding-left: 268px;
+            width: 800px;
+        }
         &--search{
             padding: 16px;
             border-radius: 4px;
@@ -37,7 +46,8 @@
         height: 50px;
         width: 50px;
         @include tablet {
-            margin-left: 60px;
+            position: relative;
+            left: 62px;
         }
     }
     &__btn{
@@ -56,9 +66,11 @@
         }
         }
         @include tablet{
-            display: flex;
-            padding: 0;
-            margin: 0%;
+            margin: 0% 16px;
+            height: pxToRem(52);
+        }
+        @include desktop{
+            width: 90%;
         }
     }
 }
