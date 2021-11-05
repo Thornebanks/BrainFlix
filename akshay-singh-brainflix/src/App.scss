@@ -1,3 +1,4 @@
+@use '../src/partials/mixins' as *;
 .App {
   text-align: center;
 }
@@ -35,4 +36,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+.app__display{
+  @include desktop{
+    display: flex;
+}
 }
