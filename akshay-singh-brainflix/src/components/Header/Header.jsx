@@ -1,5 +1,7 @@
 import logo from "../../assests/Logo/BrainFlix-logo.svg";
 import hero from "../../assests/Images/Mohan-muruge.jpg";
+import UploadPage from "../../Pages/UploadPage/UploadPage";
+import { Link } from 'react-router-dom';
 import "./header.scss";
 
 function Header() {
@@ -16,12 +18,14 @@ function Header() {
             placeholder="Search"
           />
           <div className="header__btn">
-            <button
-              className="header__btn header__btn--style"
-              onClick={(event) => event.preventDefault()}
-            >
-              upload
-            </button>
+            <a href={UploadPage}>
+              <button
+                className="header__btn header__btn--style"
+                onClick={(event) => event.preventDefault()}
+              >
+                upload
+              </button>
+            </a>
           </div>
         </form>
         <div className="header__hero">

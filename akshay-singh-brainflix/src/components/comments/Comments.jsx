@@ -1,10 +1,10 @@
 import './comments.scss';
 import OldComments from './OldComents';
 
-function Comments(props){
+function Comments({activeVideo}){
     return (
         <ul className="comments">
-          {props.video.comments.map((Comment) => {
+          {activeVideo?.comments?.map((Comment) => {
             return(
               <OldComments
                       key={Comment.id}
