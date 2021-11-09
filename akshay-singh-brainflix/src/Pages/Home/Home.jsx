@@ -5,7 +5,6 @@ import VideoDetails from "../../components/Video-details/Video-details";
 import NewComments from "../../components/New-comments/NewComments";
 import Comments from "../../components/comments/Comments";
 import SideBar from "../../components/Side-bar/SideBar";
-import UploadPage from "../UploadPage/UploadPage";
 import axios from "axios";
 
 class Home extends React.Component {
@@ -47,12 +46,6 @@ class Home extends React.Component {
       .catch((error) => console.log(error));
   };
 
-  // getDetails = () => {
-  //   const videosDetails = this.state.videos.map((video) => {
-  //     this.getVideoDetailsById(video.id);
-  //   });
-  // };
-
   componentDidMount() {
     this.getVideos();
   }
@@ -61,10 +54,9 @@ class Home extends React.Component {
     const { id } = this.props.match.params;
 
     if (id) {
-      if (prevState.activeVideo.id !== id) {
+      if (!prevState.activeVideo ||  prevState.activeVideo.id !== id) {
         this.getVideoDetailsById(id);
-        
-      }
+        }
     }
   }
 

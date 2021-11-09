@@ -10,7 +10,7 @@ function App (){
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Home}/>
-        <Route path="/uploadPage" component={UploadPage}/>
+        <Route path="/upload" component={UploadPage}/>
         <Route path="/:id" component={Home}/>
       </Switch>
     </BrowserRouter>

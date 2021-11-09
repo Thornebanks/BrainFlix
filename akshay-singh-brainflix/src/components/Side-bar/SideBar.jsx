@@ -1,4 +1,3 @@
-// import data from "../../assests/Data/video-details.json"
 import './sideBar.scss'
 import React  from 'react';
 import { Link } from 'react-router-dom';

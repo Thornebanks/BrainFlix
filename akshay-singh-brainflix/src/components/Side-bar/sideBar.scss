@@ -36,7 +36,7 @@
         height: 25vw;
         width: 40vw;
         border-radius: 4px;
-        object-fit: contain;
+        object-fit: cover;
         @include tablet{
             height: 14vw;
             width: 25vw;

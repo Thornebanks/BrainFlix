@@ -1,5 +1,5 @@
 import './comments.scss';
-import OldComments from './OldComents';
+import OldComments from '../OldComments/OldComents';
 
 function Comments({activeVideo}){
     return (

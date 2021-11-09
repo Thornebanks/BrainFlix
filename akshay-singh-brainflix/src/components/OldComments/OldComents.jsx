@@ -1,4 +1,5 @@
 import React from "react";
+import './OldComments.scss';
 
 function OldComments(props) {
   const date = new Date(Number(props.timestamp)).toLocaleDateString();

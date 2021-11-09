@@ -1,16 +1,16 @@
 import logo from "../../assests/Logo/BrainFlix-logo.svg";
 import hero from "../../assests/Images/Mohan-muruge.jpg";
 import thumbnail from "../../assests/Images/Upload-video-preview.jpg";
-import Home from "../Home/Home";
+import { Link } from "react-router-dom";
 import "./UploadPage.scss";
 
 function UploadPage() {
   return (
     <div>
       <header className="header">
-        <a href={Home}>
+        <Link to="/">
           <img className="header__img" src={logo} alt="BrainFlix logo" />
-        </a>
+        </Link>
         <div className="header__search">
           <form className="header__form">
             <input
@@ -23,7 +23,6 @@ function UploadPage() {
             <div className="header__btn">
               <button
                 className="header__btn header__btn--style"
-                onClick={(event) => event.preventDefault()}
               >
                 upload
               </button>
