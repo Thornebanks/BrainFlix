@@ -1,6 +1,4 @@
-
 @use "../../partials/mixins" as *;
-
 @use "../../partials/variables" as *;
 
 .header {
@@ -23,6 +21,7 @@
   &__search {
     display: flex;
     justify-content: space-evenly;
+    border-bottom: 1px solid $silver;
   }
   &__form {
     padding-left: 16px;
@@ -74,4 +73,76 @@
       width: 90%;
     }
   }
+}
+
+.upload{
+  font-family: $font-family;
+  
+  &__title{
+    padding: 24px 16px 8px;
+    }
+    &__thumbnail{
+      padding-left: 16px;
+      text-transform: uppercase;
+      color: $silver;
+      font-weight: normal;
+      font-size: pxToRem(13);
+    }
+
+  &__img{
+    padding: 0 16px;
+    @include tablet{
+      width: 90vw;
+      margin: 0 auto;
+      padding-left: 72px;
+  }
+  }
+  &__form,
+  &__textarea {
+    width: 99%;
+    padding: 16px;
+    resize: none;
+    border-radius: 4px;
+  }
+  &__video,
+  &__description {
+    text-transform: uppercase;
+    font-weight: normal;
+    color: $silver;
+    font-size: pxToRem(13);
+    padding-bottom: 0;
+  }
+  &__container{
+    padding-bottom: 16px;
+  }
+  &__btn{
+    width: 81%;
+    &--style {
+      display: block;
+      padding: 16px;
+      margin: 16px 0;
+      text-transform: uppercase;
+      border-radius: 4px;
+      color: $white;
+      background-color: $brainFlix-blue;
+      width: 123%;
+      &:hover {
+        background-color: $brainFlix-darkBlue;
+      }
+  }
+}
+&__cancelBtn{
+  width: 81%;
+    &--style {
+      display: block;
+      padding: 16px;
+      margin: 16px 0;
+      text-transform: uppercase;
+      border-radius: 4px;
+      color: $brainFlix-blue;
+      background-color: $white;
+      width: 123%;
+      border:none;
+  }
+}
 }

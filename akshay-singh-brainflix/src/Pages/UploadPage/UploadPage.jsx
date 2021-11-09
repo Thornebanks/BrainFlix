@@ -21,11 +21,7 @@ function UploadPage() {
               placeholder="Search"
             />
             <div className="header__btn">
-              <button
-                className="header__btn header__btn--style"
-              >
-                upload
-              </button>
+              <button className="header__btn header__btn--style">upload</button>
             </div>
           </form>
           <div className="header__hero">
@@ -38,19 +34,25 @@ function UploadPage() {
         <h3 className="upload__thumbnail">video thumbnail</h3>
         <img className="upload__img" src={thumbnail} alt="thumbnail" />
         <form className="upload__form">
-          <input
-            className="upload__form upload__form--search"
-            type="text"
-            name=""
-            id=""
-            placeholder="Add a title to your video"
-          />
-          <textarea
-            className="upload__textarea"
-            cols="30"
-            rows="10"
-            placeholder="Add a description to your video"
-          ></textarea>
+          <div className="upload__container">
+            <h3 className="upload__video">title your video</h3>
+            <input
+              className="upload__form upload__form--title"
+              type="text"
+              name=""
+              id=""
+              placeholder="Add a title to your video"
+            />
+          </div>
+          <div className="upload__container">
+            <h3 className="upload__description">add a video description</h3>
+            <textarea
+              className="upload__textarea"
+              cols="31"
+              rows="5"
+              placeholder="Add a description to your video"
+            ></textarea>
+          </div>
           <div className="upload__btn">
             <button
               className="upload__btn upload__btn--style"
