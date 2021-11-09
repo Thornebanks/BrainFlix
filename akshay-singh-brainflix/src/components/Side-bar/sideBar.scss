@@ -1,11 +1,10 @@
-@use '../../partials/global' as *;
+// @use '../../partials/global' as *;
 @use '../../partials/mixins' as *;
-@use '../../partials/typography' as *;
+// @use '../../partials/typography' as *;
 @use '../../partials/variables' as *;
 
 .side-bar{
-    border-top: 1px solid $silver;
-    margin-left: 32px;
+    border-left: 1px solid $mercury;
     @include tablet{
         padding-left: 8px;
     }  
@@ -24,16 +23,17 @@
     }
     &__container{
         display: flex;
-        flex-wrap: wrap;
+        position: relative;
+        padding-bottom: 16px;
         @include tablet{
             padding-top: 24px;
         }
         @include desktop{
-            padding: 16px 0 16px 16px;
+            width: 270px;
         }
     }
     &__img{
-        height: 25vw;
+        height: 84px;
         width: 40vw;
         border-radius: 4px;
         object-fit: cover;
@@ -57,18 +57,28 @@
             width: 30%;
         }
         @include desktop {
-            // width: 15%;
+            height: 20px;
         }
     }
     &__artist{
         font-family: $font-family;
         font-weight: normal;
+        color: $brainFlix-black;
+        position: absolute;
+        top: 50px;
+        left: 140px;
         @include tablet{
-           
+            position: absolute;
+            left: 205px;
+            top: 98px;
     }
         @include desktop {
-            
+            position: absolute;
+            left: 142px;
+            top: 90px;
         }
     }
-    
+    &__link{
+        text-decoration: none;
+    }
 }

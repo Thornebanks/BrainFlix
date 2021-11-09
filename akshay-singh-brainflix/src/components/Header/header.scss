@@ -53,6 +53,7 @@
   }
   &__btn {
     width: 100%;
+    font-family: $font-family;
     &--style {
       display: block;
       padding: 16px;
@@ -62,6 +63,8 @@
       color: $white;
       background-color: $brainFlix-blue;
       width: 123%;
+      text-align: center;
+      text-decoration: none;
       &:hover {
         background-color: $brainFlix-darkBlue;
       }

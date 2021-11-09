@@ -9,7 +9,7 @@
     position: relative;
   }
   @include desktop {
-    padding-left: 80px;
+    padding-left: 88px;
     padding-bottom: 16px;
   }
   &__img {
@@ -77,6 +77,9 @@
 
 .upload {
   font-family: $font-family;
+  @include desktop{
+    padding-left: 88px;
+  }
 
   &__title {
     padding: 24px 16px 8px;
@@ -107,6 +110,11 @@
       margin: 0 auto;
       padding-left: 32px;
     }
+    @include desktop{
+      margin: 0%;
+      width: 40vw;
+      object-fit: cover;
+    }
   }
   &__form {
     padding-left: 32px;
@@ -115,10 +123,14 @@
       padding: 16px;
       resize: none;
       border-radius: 4px;
+      font-family: $font-family;
       @include tablet {
         height: 52px;
         padding: 16px;
         background-color: $albster;
+      }
+      @include desktop{
+        width: 250%;
       }
     }
   }
@@ -127,10 +139,14 @@
     padding: 16px;
     resize: none;
     border-radius: 4px;
+    font-family: $font-family;
     @include tablet {
       height: 120px;
       padding: 16px;
       background-color: $albster;
+    }
+    @include desktop{
+      width: 250%;
     }
   }
   &__video,
@@ -148,12 +164,18 @@
       @include tablet{
         border-bottom: 1px solid $mercury;
       }
+      @include desktop{
+        border: none;
+      }
     }
   }
   &__btn {
     width: 81%;
     @include tablet {
       display: none;
+    }
+    @include desktop{
+      display: initial;
     }
     &--style {
       display: block;
@@ -174,6 +196,9 @@
     @include tablet {
       display: none;
     }
+    @include desktop{
+      display: initial;
+    }
     &--style {
       display: block;
       padding: 16px;
@@ -185,5 +210,11 @@
       width: 123%;
       border: none;
     }
+  }
+  
+  &__desktop{
+    display: flex;
+    border-bottom: 1px solid $mercury;
+    padding-bottom: 32px;
   }
 }
