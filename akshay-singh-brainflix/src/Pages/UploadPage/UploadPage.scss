@@ -2,6 +2,7 @@
 @use "../../partials/variables" as *;
 
 .header {
+  border-bottom: 1px solid $mercury;
   @include tablet {
     display: flex;
     padding-top: 32px;
@@ -21,7 +22,6 @@
   &__search {
     display: flex;
     justify-content: space-evenly;
-    border-bottom: 1px solid $silver;
   }
   &__form {
     padding-left: 16px;
@@ -75,34 +75,63 @@
   }
 }
 
-.upload{
+.upload {
   font-family: $font-family;
-  
-  &__title{
-    padding: 24px 16px 8px;
-    }
-    &__thumbnail{
-      padding-left: 16px;
-      text-transform: uppercase;
-      color: $silver;
-      font-weight: normal;
-      font-size: pxToRem(13);
-    }
 
-  &__img{
+  &__title {
+    padding: 24px 16px 8px;
+    @include tablet {
+      padding-left: 0;
+      font-size: pxToRem(33);
+      border-bottom: 1px solid $mercury;
+      margin: 0 32px;
+      padding-bottom: 16px;
+    }
+  }
+  &__thumbnail {
+    padding-left: 16px;
+    text-transform: uppercase;
+    color: $silver;
+    font-weight: normal;
+    font-size: pxToRem(13);
+    @include tablet {
+      padding-left: 32px;
+      font-size: pxToRem(14);
+    }
+  }
+
+  &__img {
     padding: 0 16px;
-    @include tablet{
-      width: 90vw;
+    @include tablet {
+      width: 50vw;
       margin: 0 auto;
-      padding-left: 72px;
+      padding-left: 32px;
+    }
   }
+  &__form {
+    padding-left: 32px;
+    &--title {
+      width: 99%;
+      padding: 16px;
+      resize: none;
+      border-radius: 4px;
+      @include tablet {
+        height: 52px;
+        padding: 16px;
+        background-color: $albster;
+      }
+    }
   }
-  &__form,
   &__textarea {
     width: 99%;
     padding: 16px;
     resize: none;
     border-radius: 4px;
+    @include tablet {
+      height: 120px;
+      padding: 16px;
+      background-color: $albster;
+    }
   }
   &__video,
   &__description {
@@ -112,11 +141,20 @@
     font-size: pxToRem(13);
     padding-bottom: 0;
   }
-  &__container{
+  &__container {
     padding-bottom: 16px;
+    margin-right: 16px;
+    &--bottom{
+      @include tablet{
+        border-bottom: 1px solid $mercury;
+      }
+    }
   }
-  &__btn{
+  &__btn {
     width: 81%;
+    @include tablet {
+      display: none;
+    }
     &--style {
       display: block;
       padding: 16px;
@@ -129,10 +167,13 @@
       &:hover {
         background-color: $brainFlix-darkBlue;
       }
+    }
   }
-}
-&__cancelBtn{
-  width: 81%;
+  &__cancelBtn {
+    width: 81%;
+    @include tablet {
+      display: none;
+    }
     &--style {
       display: block;
       padding: 16px;
@@ -142,7 +183,7 @@
       color: $brainFlix-blue;
       background-color: $white;
       width: 123%;
-      border:none;
+      border: none;
+    }
   }
-}
 }

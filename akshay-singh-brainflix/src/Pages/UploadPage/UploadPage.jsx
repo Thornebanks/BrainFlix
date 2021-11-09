@@ -34,7 +34,7 @@ function UploadPage() {
         <h3 className="upload__thumbnail">video thumbnail</h3>
         <img className="upload__img" src={thumbnail} alt="thumbnail" />
         <form className="upload__form">
-          <div className="upload__container">
+          <div className="upload__container upload__container--top">
             <h3 className="upload__video">title your video</h3>
             <input
               className="upload__form upload__form--title"
@@ -44,7 +44,7 @@ function UploadPage() {
               placeholder="Add a title to your video"
             />
           </div>
-          <div className="upload__container">
+          <div className="upload__container upload__container--bottom">
             <h3 className="upload__description">add a video description</h3>
             <textarea
               className="upload__textarea"
