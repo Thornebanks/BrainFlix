@@ -45,4 +45,8 @@
             line-height: pxToRem(22);
         }
     }
+    &__container{
+        display: flex;
+        align-items: end;
+    }
 }

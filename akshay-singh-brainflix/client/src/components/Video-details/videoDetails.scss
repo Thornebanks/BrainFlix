@@ -14,7 +14,7 @@
         font-weight: bold;
         border-bottom: 1px solid $silver;
         padding-bottom: 16px;
-        margin-right: 32px;
+        // margin-right: 32px;
         font-size: pxToRem(24);
         line-height: pxToRem(32);
         @include tablet{
@@ -43,7 +43,7 @@
         font-size: pxToRem(13);
         line-height: pxToRem(18);
         border-top: 1px solid $silver;
-        margin-right: 32px;
+        padding-right: 32px;
         padding-top: 16px;
         @include tablet {
             font-size: pxToRem(14);
@@ -53,6 +53,7 @@
     }
     &__date{
         color: $silver;
+        padding-left: 20px;
         @include desktop{
             padding-left: 40px;
         }

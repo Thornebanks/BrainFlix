@@ -11,7 +11,6 @@ function Comments({activeVideo}){
                       name={Comment.name}
                       timestamp={Comment.timestamp}
                       comment={Comment.comment}
-                     
                       />
             );
           })}

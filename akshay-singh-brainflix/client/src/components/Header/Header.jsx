@@ -15,6 +15,7 @@ function Header() {
             name=""
             id=""
             placeholder="Search"
+            required
           />
           <div className="header__btn">
             <Link to="/upload"

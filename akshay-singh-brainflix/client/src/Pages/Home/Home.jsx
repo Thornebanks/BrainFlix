@@ -16,10 +16,10 @@ class Home extends React.Component {
   getVideos = () => {
     axios
       .get(
-        "https://project-2-api.herokuapp.com/videos?api_key=beed580c-9037-40b1-a6a4-878d40459c3e"
+        // "https://project-2-api.herokuapp.com/videos?api_key=beed580c-9037-40b1-a6a4-878d40459c3e"
+        "http://localhost:8081/videos"
       )
       .then((response) => {
-        console.log("test", response.data);
         this.setState({
           videos: response.data
         }, () => {
@@ -35,7 +35,8 @@ class Home extends React.Component {
     console.log({ id });
     axios
       .get(
-        `https://project-2-api.herokuapp.com/videos/${id}?api_key=beed580c-9037-40b1-a6a4-878d40459c3e`
+        // `https://project-2-api.herokuapp.com/videos/${id}?api_key=beed580c-9037-40b1-a6a4-878d40459c3e`
+        `http://localhost:8081/videos/${id}`
       )
       .then((response) => {
         console.log("hello", response.data);
@@ -59,6 +60,8 @@ class Home extends React.Component {
         }
     }
   }
+
+  
 
   render() {
     if(this.state.activeVideo === null){

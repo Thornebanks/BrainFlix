@@ -4,12 +4,14 @@
 @use '../../partials/variables' as *;
 
 .side-bar{
-    border-left: 1px solid $mercury;
+    border-top: 1px solid $mercury;
+    padding-left: 8px;
     @include tablet{
-        padding-left: 8px;
+        padding-left: 16px;
     }  
     @include desktop{
         padding-right: 100px;
+        border-left: 1px solid $mercury;
     }
     
     &__videos{
@@ -23,18 +25,23 @@
     }
     &__container{
         display: flex;
-        position: relative;
         padding-bottom: 16px;
         @include tablet{
             padding-top: 24px;
         }
         @include desktop{
             width: 270px;
+            padding: 0;
         }
+    }
+    &__title-container{
+        display: flex;
+        flex-direction: column;
+        padding-top: 16px;
     }
     &__img{
         height: 84px;
-        width: 40vw;
+        width: 100px;
         border-radius: 4px;
         object-fit: cover;
         @include tablet{
@@ -42,8 +49,8 @@
             width: 25vw;
         }
         @include desktop{
-            height: 7vw;
-            width: 10vw;
+            height: 84px;
+            width: 100px;
         }
     }
     &__title{
@@ -51,31 +58,27 @@
         color: $brainFlix-black;
         padding:0 16px;
         font-size: pxToRem(13);
-        width: 50%;
+        margin: 0;
+        width: 90%;
         @include tablet{
             font-size: pxToRem(14);
-            width: 30%;
+            width: 62%;
         }
         @include desktop {
-            height: 20px;
+            height: 0;
+            width: 100%;
         }
     }
     &__artist{
         font-family: $font-family;
         font-weight: normal;
         color: $brainFlix-black;
-        position: absolute;
-        top: 50px;
-        left: 140px;
+        padding-left: 16px;
         @include tablet{
-            position: absolute;
-            left: 205px;
-            top: 98px;
+            padding-top: 22px;
     }
         @include desktop {
-            position: absolute;
-            left: 142px;
-            top: 90px;
+            padding-top: 32px;
         }
     }
     &__link{
