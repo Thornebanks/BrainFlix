@@ -1,87 +1,87 @@
 // @use '../../partials/global' as *;
-@use '../../partials/mixins' as *;
+@use "../../partials/mixins" as *;
 // @use '../../partials/typography' as *;
-@use '../../partials/variables' as *;
+@use "../../partials/variables" as *;
 
-.side-bar{
-    border-top: 1px solid $mercury;
-    padding-left: 8px;
-    @include tablet{
-        padding-left: 16px;
-    }  
-    @include desktop{
-        padding-right: 100px;
-        border-left: 1px solid $mercury;
+.side-bar {
+  border-top: 1px solid $mercury;
+  padding-left: 8px;
+  @include tablet {
+    padding-left: 16px;
+  }
+  @include desktop {
+    padding-right: 100px;
+    border-left: 1px solid $mercury;
+  }
+
+  &__videos {
+    font-family: $font-family;
+    text-transform: uppercase;
+    color: $silver;
+    font-weight: normal;
+    @include desktop {
+      padding: 32px 16px 0 16px;
     }
-    
-    &__videos{
-        font-family: $font-family;
-        text-transform: uppercase;
-        color: $silver;
-        font-weight: normal;
-        @include desktop{
-            padding: 32px 16px 0 16px;
-        }
+  }
+  &__container {
+    display: flex;
+    padding-bottom: 16px;
+    @include tablet {
+      padding-top: 24px;
     }
-    &__container{
-        display: flex;
-        padding-bottom: 16px;
-        @include tablet{
-            padding-top: 24px;
-        }
-        @include desktop{
-            width: 270px;
-            padding: 0;
-        }
+    @include desktop {
+      width: 270px;
+      padding: 0;
     }
-    &__title-container{
-        display: flex;
-        flex-direction: column;
-        padding-top: 16px;
+  }
+  &__title-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+  }
+  &__img {
+    height: 84px;
+    width: 100px;
+    border-radius: 4px;
+    object-fit: cover;
+    @include tablet {
+      height: 14vw;
+      width: 25vw;
     }
-    &__img{
-        height: 84px;
-        width: 100px;
-        border-radius: 4px;
-        object-fit: cover;
-        @include tablet{
-            height: 14vw;
-            width: 25vw;
-        }
-        @include desktop{
-            height: 84px;
-            width: 100px;
-        }
+    @include desktop {
+      height: 84px;
+      width: 100px;
     }
-    &__title{
-        font-family: $font-family;
-        color: $brainFlix-black;
-        padding:0 16px;
-        font-size: pxToRem(13);
-        margin: 0;
-        width: 90%;
-        @include tablet{
-            font-size: pxToRem(14);
-            width: 62%;
-        }
-        @include desktop {
-            height: 0;
-            width: 100%;
-        }
+  }
+  &__title {
+    font-family: $font-family;
+    color: $brainFlix-black;
+    padding: 0 16px;
+    font-size: pxToRem(13);
+    margin: 0;
+    width: 90%;
+    @include tablet {
+      font-size: pxToRem(14);
+      width: 62%;
     }
-    &__artist{
-        font-family: $font-family;
-        font-weight: normal;
-        color: $brainFlix-black;
-        padding-left: 16px;
-        @include tablet{
-            padding-top: 22px;
+    @include desktop {
+      height: 0;
+      width: 100%;
     }
-        @include desktop {
-            padding-top: 32px;
-        }
+  }
+  &__artist {
+    font-family: $font-family;
+    font-weight: normal;
+    color: $brainFlix-black;
+    padding-left: 16px;
+    @include tablet {
+      padding-top: 22px;
     }
-    &__link{
-        text-decoration: none;
+    @include desktop {
+      padding-top: 32px;
     }
+  }
+  &__link {
+    text-decoration: none;
+  }
 }

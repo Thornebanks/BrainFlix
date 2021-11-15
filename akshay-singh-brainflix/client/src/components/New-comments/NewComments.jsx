@@ -21,7 +21,10 @@ function NewComments() {
             required
           ></textarea>
           <div className="new-comments__btn">
-            <button className="new-comments__btn new-comments__btn--style" onClick={(event) => event.preventDefault()}>
+            <button
+              className="new-comments__btn new-comments__btn--style"
+              onClick={(event) => event.preventDefault()}
+            >
               comment
             </button>
           </div>

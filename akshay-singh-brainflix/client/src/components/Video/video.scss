@@ -1,20 +1,19 @@
-@use '../../partials/global' as *;
-@use '../../partials/mixins' as *;
-@use '../../partials/variables' as *;
+@use "../../partials/mixins" as *;
+@use "../../partials/variables" as *;
 
-.current-video{
-    @include tablet{
-        background-color: $brainFlix-darkBlack;
+.current-video {
+  @include tablet {
+    background-color: $brainFlix-darkBlack;
+  }
+
+  &__main {
+    @include tablet {
+      width: 90vw;
+      margin: 0 auto;
+      padding-left: 72px;
     }
-    
-    &__main{
-        @include tablet{
-        width: 90vw;
-        margin: 0 auto;
-        padding-left: 72px;
+    @include desktop {
+      padding-left: pxToRem(150);
     }
-    @include desktop{
-        padding-left: pxToRem(150);
-    }
-    }
+  }
 }

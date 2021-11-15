@@ -1,12 +1,14 @@
 import logo from "../../assests/Logo/BrainFlix-logo.svg";
 import hero from "../../assests/Images/Mohan-muruge.jpg";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import "./header.scss";
 
 function Header() {
   return (
     <header className="header">
-      <Link to="/"><img className="header__img" src={logo} alt="BrainFlix logo" /></Link>
+      <Link to="/">
+        <img className="header__img" src={logo} alt="BrainFlix logo" />
+      </Link>
       <div className="header__search">
         <form className="header__form">
           <input
@@ -18,11 +20,8 @@ function Header() {
             required
           />
           <div className="header__btn">
-            <Link to="/upload"
-              className="header__btn header__btn--style"
-              >
-                upload
-              
+            <Link to="/upload" className="header__btn header__btn--style">
+              upload
             </Link>
           </div>
         </form>

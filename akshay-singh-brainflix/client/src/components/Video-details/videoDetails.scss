@@ -1,61 +1,60 @@
-@use '../../partials/global' as *;
-@use '../../partials/mixins' as *;
-@use '../../partials/variables' as *;
-@use '../../partials/typography' as *;
+@use "../../partials/mixins" as *;
+@use "../../partials/variables" as *;
+
 
 .video {
-    padding-left: 32px;
-    @include desktop{
-        padding-left: 88px;
-    }
+  padding-left: 32px;
+  @include desktop {
+    padding-left: 88px;
+  }
 
-    &__title{
-        font-family: $font-family;
-        font-weight: bold;
-        border-bottom: 1px solid $silver;
-        padding-bottom: 16px;
-        // margin-right: 32px;
-        font-size: pxToRem(24);
-        line-height: pxToRem(32);
-        @include tablet{
-            font-size: pxToRem(33);
-            padding-top: 16px;
-            border-bottom: hidden ;
-        }
+  &__title {
+    font-family: $font-family;
+    font-weight: bold;
+    border-bottom: 1px solid $silver;
+    padding-bottom: 16px;
+    // margin-right: 32px;
+    font-size: pxToRem(24);
+    line-height: pxToRem(32);
+    @include tablet {
+      font-size: pxToRem(33);
+      padding-top: 16px;
+      border-bottom: hidden;
     }
-    &__art{
-        display: flex;
-        align-items: baseline;
-        }
+  }
+  &__art {
+    display: flex;
+    align-items: baseline;
+  }
 
-    &__artist{
-        font-family: $font-family;
-        font-weight: bold;
-        font-size: pxToRem(13);
-        @include tablet {
-            font-size: pxToRem(14);
-            padding-right: 32px;
-        }
+  &__artist {
+    font-family: $font-family;
+    font-weight: bold;
+    font-size: pxToRem(13);
+    @include tablet {
+      font-size: pxToRem(14);
+      padding-right: 32px;
     }
+  }
 
-    &__description{
-        font-family: $font-family;
-        font-size: pxToRem(13);
-        line-height: pxToRem(18);
-        border-top: 1px solid $silver;
-        padding-right: 32px;
-        padding-top: 16px;
-        @include tablet {
-            font-size: pxToRem(14);
-            line-height: pxToRem(22);
-            padding-top: 32px;
-        }
+  &__description {
+    font-family: $font-family;
+    font-size: pxToRem(13);
+    line-height: pxToRem(18);
+    border-top: 1px solid $silver;
+    padding-right: 32px;
+    padding-top: 16px;
+    @include tablet {
+      font-size: pxToRem(14);
+      line-height: pxToRem(22);
+      padding-top: 32px;
     }
-    &__date{
-        color: $silver;
-        padding-left: 20px;
-        @include desktop{
-            padding-left: 40px;
-        }
+  }
+  &__date {
+    color: $silver;
+    padding-left: 20px;
+    @include desktop {
+      padding-left: 40px;
     }
+  }
 }

@@ -28,4 +28,3 @@ function SideBar({ video }) {
 }
 
 export default SideBar;
-
